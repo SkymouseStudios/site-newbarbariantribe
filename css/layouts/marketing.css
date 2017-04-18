@@ -12,7 +12,7 @@ body {
     line-height: 1.7em;
     color: #7f8c8d;
     font-size: 13px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif !important;
 }
 
 h1,
@@ -73,15 +73,15 @@ label {
  */
 .pure-button {
     background-color: transparent;
-    border: 3px solid red;
+    border: 3px solid white;
     color: red;
     padding: 0.5em 2em;
     border-radius: 5px;
 }
 
 a.pure-button-primary {
-    background: transparent;
-    color: #1f8dd6;
+    background: #1f8dd6;
+    color: white;
     border-radius: 5px;
     font-size: 120%;
 }
@@ -134,7 +134,10 @@ a.pure-button-primary {
  */
 
 .splash-container {
-    background: black;
+    background-image: url('../../img/man.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -148,10 +151,10 @@ a.pure-button-primary {
 .splash {
     /* absolute center .splash within .splash-container */
     /*width: 80%;*/
-    height: 60%;
+    height: 40%;
     /*margin: auto;*/
     position: absolute;
-    top: 80px; left: 0; bottom: 0; right: 0;
+    top: 70px; left: 0; bottom: 0; right: 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -162,6 +165,7 @@ a.pure-button-primary {
     color: white;
     line-height: 0.9em;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* This is the subheading that appears on the blue section */
@@ -170,6 +174,23 @@ a.pure-button-primary {
     letter-spacing: 0.05em;
     opacity: 0.8;
 }
+
+div#mc_embed_signup.top{
+    width: 400px;
+    margin: 0 auto;
+    background-color: transparent;
+    text-align: center;
+}
+
+div#mc_embed_signup.top input {
+    display: inline;
+}
+
+div#mc_embed_signup.top input[type="submit"] {
+    margin: 0 auto;
+    background-color: red;
+}
+
 
 /*
  * -- CONTENT STYLES --
