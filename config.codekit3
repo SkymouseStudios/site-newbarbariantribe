@@ -714,6 +714,12 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/pricing.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/pricing.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,

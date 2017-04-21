@@ -161,7 +161,7 @@ a.pure-button-primary {
 
 /* This is the main heading that appears on the blue section */
 .splash-head {
-    font-size: 90px;
+    font-size: 70px;
     color: white;
     line-height: 0.9em;
     margin-top: 0;
@@ -191,7 +191,15 @@ div#mc_embed_signup.top input[type="submit"] {
     background-color: red;
 }
 
-
+.price {
+    display: inline-block;
+    font-family: serif;
+    font-size: 4em;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px dashed #aaa;
+}
 /*
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
@@ -199,7 +207,7 @@ div#mc_embed_signup.top input[type="submit"] {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 57%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -280,13 +288,17 @@ div#mc_embed_signup.top input[type="submit"] {
     }
 
     .splash-head {
-        font-size: 4em;
+        font-size: 150px;
     }
 
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
         border: none;
+    }
+
+    .content-wrapper {
+        top: 80%;
     }
 
 }

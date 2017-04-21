@@ -28,7 +28,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>The New Barbarian</title>
+    <title>The New Barbarian | 💪 Change Your Life 💪</title>
+    
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+    <script>
+    paypal.Button.render({
+    
+        env: 'production', // Optional: specify 'sandbox' environment
+
+        payment: function() {
+            // Set up the payment here, when the buyer clicks on the button
+        },
+
+        onAuthorize: function(data, actions) {
+            // Execute the payment here, when the buyer approves the transaction
+       }
+            
+    }, '#paypal-button');
+    </script>
     
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     
@@ -54,13 +72,7 @@
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">The New Barbarian</a>
-
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Get Barbaric</a></li>
-        </ul>
+        <a class="pure-menu-heading" href="#">The New Barbarian</a>
     </div>
 </div>
 
@@ -120,7 +132,7 @@
                     Strength over tone
                 </h3>
                 <p>
-                    Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    Don't waste time building a body that can't do anything. Focus on real barbaric strength
                 </p>
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
@@ -137,14 +149,15 @@
 
     <div class="ribbon l-box-lrg pure-g">
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img width="300" alt="File Icons" class="pure-img-responsive" src="img/common/file-icons.png">
+        <h3 class="content-head content-head-ribbon">Be awesome. Be Barbaric.</h3>
+        <div class="price">$12</div>
+        <div id="paypal-button"></div>
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
 
-            <h2 class="content-head content-head-ribbon">A Project that Keeps on Giving.</h2>
-
+            <h2 class="content-head content-head-ribbon">Go Premium. Limited time offer.</h2>
             <p>
-                The Tribe at New Barbarian is dedicated to providing quality workouts, tips and advice to help you become a tough, gritty man, who is ready to take on the world and begin the rest of his life.
+                For simple $12 you can get the exclusive access to a great community of men fighting to be better men, continuously updated workout programs and special gift. Start your journey today, cancel any time. It's like Netflix without the high-quality streaming.
             </p>
         </div>
     </div>
