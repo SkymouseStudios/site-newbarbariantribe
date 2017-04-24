@@ -1,0 +1,247 @@
+<!-- Standard Header -->
+<!doctype html>
+    <html class="no-js" lang="en">
+        <head>
+            <meta http-equiv="x-ua-compatible" content="ie=edge">
+            <meta name="description" content="">
+            <link rel="apple-touch-icon" href="apple-touch-icon.png">
+            <link rel="apple-touch-icon" sizes="57x57" href="library/img/logo/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="library/img/logo/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="library/img/logo/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="library/img/logo/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="library/img/logo/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="library/img/logo/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="library/img/logo/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="library/img/logo/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="library/img/logo/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="library/img/logo/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="library/img/logo/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="library/img/logo/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="library/img/logo/favicon-16x16.png">
+            <link rel="manifest" href="library/img/logo/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="library/image/logo/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff">
+            <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <meta name="description" content="A layout example that shows off a responsive product landing page.">
+            <title>The New Barbarian | Why Barbarian?</title>
+            
+            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
+            <script> // Paypal button script
+            paypal.Button.render({
+
+                env: 'sandbox', // Optional: specify 'sandbox' environment
+
+                client: {
+                    sandbox:    'access_token$sandbox$x9wv367f98ggxmfr$da3c46555d8d35136328ea340d90cdbd',
+                    production: ''
+                },
+
+                payment: function() {
+
+                    var env    = this.props.env;
+                    var client = this.props.client;
+
+                    return paypal.rest.payment.create(env, client, {
+                        transactions: [
+                            {
+                                amount: { total: '67.00', currency: 'USD' }
+                            }
+                        ]
+                    });
+                },
+
+                commit: true, // Optional: show a 'Pay Now' button in the checkout flow
+
+                onAuthorize: function(data, actions) {
+
+                    // Optional: display a confirmation page here
+
+                    return actions.payment.execute().then(function() {
+                        // Show a success page to the buyer
+                    });
+                }
+
+            }, '#paypal-button');
+        </script>
+            
+            <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+            
+            <!--[if lte IE 8]>
+                <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
+            <![endif]-->
+            <!--[if gt IE 8]><!-->
+                <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+            <!--<![endif]-->
+            
+            <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+            
+            <link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+                <!--[if lte IE 8]>
+                    <link rel="stylesheet" href="css/layouts/marketing-old-ie.css">
+                <![endif]-->
+                <!--[if gt IE 8]><!-->
+                    <link rel="stylesheet" href="css/style.css">
+                <!--<![endif]-->
+        </head>
+    <body>
+
+
+<div class="header">
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+        <a class="pure-menu-heading" href="index.html">The New Barbarian</a>
+    </div>
+</div>
+
+<div class="splash-container">
+    <div class="splash">
+        <h1 class="splash-head"><strong>Why Barbarian?</strong></h1>
+        
+        <p class="splash-subhead">
+            Get the full 3-month workout.
+        </p>
+        <p>
+
+        <!-- Top MailChimp Sign-up -->
+        <div id="mc_embed_signup" class="top">
+            <form action="//NewBarbarianTribe.us15.list-manage.com/subscribe/post?u=80f52b3beca246ce1ceae122d&amp;id=44a2757c3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_80f52b3beca246ce1ceae122d_44a2757c3e" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Get Barbaric" name="subscribe" id="mc-embedded-subscribe" class="button pure-button pure-button-primary"></div>
+                </div>
+            </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+
+        </p>
+    </div>
+</div>
+
+<div class="content-wrapper">
+    <div class="content">
+        <h2 class="content-head is-center">Change your life for the price of Netflix.</h2>
+           <div class="copy">
+           <p>I still remember the first time someone called me a barbarian. Well, at least I remember the first time I remember someone calling me a barbarian. It was my girlfriend. I was… well, ok… I don’t really remember it, but I do remember that it happened. I did something a little brutish, and she called me a barbarian.</p>
+
+<p>Shot to the heart… I didn’t want to admit it at the time, but it was true. I was barbaric. I was unrefined. I was not the gentleman that I has told myself I was.</p>
+
+<p>And then I got to thinking. Maybe this isn’t such a bad thing.</p>
+
+<p>When was the last time you looked at a guy in a tweed suit and shook in your boots? Gentlemen aren’t dangerous. I’m dangerous. You should fear me. Gentlemen are civilized, gentlemen don’t offend. I certainly do.</p>
+
+<p>But, at the same time, I love the arts. I’m well read. I’m thoughtful and intelligent and loyal. I don’t destroy for the sake of destruction like barbarians do.</p>
+
+<p>But when you consider the barbarian as he actually was in history, not as he is in your imagination, then I think we start to see a new picture.</p>
+
+<p>It isn’t accurate to call barbarians the destroyers of culture, like so many do. They aren’t bands of marauding bandits who find no greater pleasure than to pillage and rape. Rather than considering them the destroyers of culture, we should start talking about them as the consumers.</p>
+
+<p>They didn’t come to destroy; they came to take for themselves. Barbarians saw something good outside of themselves and exerted themselves to obtain it. This is not the action of a marauding horde, but of a people looking to find a better life, a people looking to improve themselves. They sought to be brought into the Christian Greco-Roman World. No, not sought, demanded. And this meant entering into their religion as much as it meant to enter into their educational system, their art, and their cities.</p>
+
+<p>They were dangerous, but they were humble. They knew they were capable of great things, but they also knew they needed teachers. That is why I connect with the idea of barbarism.</p>
+
+<p>This is what it means to be a Barbarian. To be dangerous, to have the strength and skill to do what you want to do. To be strong enough that no one can resist you. But at the same time to have a deep humility, realizing that you are not on top, that you are not that wise, that you need to be educated are refined and that there is a tradition that is bigger and better then you. But even though you aren’t hot shit yet, you can be if you will place yourself within this tradition and be educated. You are capable of great things, but no great things come without trial.</p>
+
+<p>We need training before we are ready to do great things. Following the Greek, the Romans, and the Christians of old, we find three pieces to this educational process. First, physical training. We will get comfortable being uncomfortable. We will harden our bodies, strengthen our sinews, and make ourselves capable of action in this world. But more importantly, we will be using physical training to strengthen our virtues, such as discipline, courage, temperance. But too much would turn us into brutes. So to balance it out, we will be studying the humanities to better understand ourselves and others. And now that we know how to act well, we need to understand what to act for. This is where Catholicism comes into play. If you want to know how to use an object, the best one to ask is the inventor. If you want to know your purpose, if you want to know the purpose of this world, you should ask the inventor (that’s God if you didn’t catch on, and yes, I believe that the Christian Trinity is the one true God, and that the Catholic understanding of this God is the accurate understanding of Him and the religion He founded).</p>
+
+<p>So get excited. Your journey to refined barbarity starts today. Let’s make waves in the modern world and create a new, vibrant, thoroughly human environment for our children to grow up in. And if you are not aware, this starts in prayer, in relationship with our creator. Pay attention, commit to your own greatness, and follow me on this path. But right now, take 10 minutes and connect with your creator. Thank Him for your existence and ask Him to help you know who you are and who He is.</p>
+
+           </div>
+     
+    </div>
+
+    <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+        <h3 class="content-head content-head-ribbon">Be awesome. Be Barbaric.</h3>
+        <div class="price">$67</div>
+        <div id="paypal-button"></div>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+            <h2 class="content-head content-head-ribbon">Go Premium. Limited time offer.</h2>
+            <p>
+                For simple $12 you can get the exclusive access to a great community of men fighting to be better men, continuously updated workout programs and special gift. Start your journey today, cancel any time. It's like Netflix without the high-quality streaming.
+            </p>
+        </div>
+    </div>
+<!-- Standard Footer -->
+        <div class="content">
+            <h2 class="content-head is-center">Join the Tribe.</h2>
+
+            <div class="pure-g">
+                <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                    <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                    </style>
+
+                    <div id="mc_embed_signup">
+                        <form action="//NewBarbarianTribe.us15.list-manage.com/subscribe/post?u=80f52b3beca246ce1ceae122d&amp;id=44a2757c3e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate pure-form pure-form-stacked" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                            <h2>Subscribe to our mailing list</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                            </label>
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">First Name </label>
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Last Name </label>
+                            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                        </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div> <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_80f52b3beca246ce1ceae122d_44a2757c3e" tabindex="-1" value=""></div><div class="clear"><input type="submit" value="Get Barbaric" name="subscribe" id="mc-embedded-subscribe" class="button pure-button"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                    <h4>Contact Us</h4>
+                    <p>Fill out the form to learn more about the Tribe: a community of Catholic Men committed bettering every aspect of their lives and growing into the mission given by God to shape this world in imitation of the Heavenly Kingdom.</p>
+                    <p>The founder, Robert "The New Barbarian" Storey, is a Catholic teacher, coach, and renaissance man. He has worked in men's formation since 2007 and is dedicated to creating a New American Catholic Culture.</p>
+
+                    <h4>More Information</h4>
+                    <p>We want to hear from you. We want to know what you are interested in and what
+                        you are looking for in your life journey so we can help you find it.</p>
+                </div>
+            </div>
+
+            </div>
+
+    <div class="footer l-box is-center">
+    &copy; 2017 The New Barbarian, LLC
+    </div>
+
+    </div>
+        <!-- Load Scripts last! -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+       <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-97377705-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>
