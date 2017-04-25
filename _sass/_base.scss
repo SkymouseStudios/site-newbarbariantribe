@@ -43,7 +43,12 @@ label {
 }
 
 
-
+#logo {
+    width: 30%;
+    position: absolute;
+    left: 30px;
+    top: -50px;
+}
 
 // -- PURE FORM STYLES --
 
@@ -61,10 +66,10 @@ label {
     margin-bottom: 1em;
 }
 
-/*
- * -- PURE BUTTON STYLES --
- * I want my pure-button elements to look a little different
- */
+// /*
+//  * -- PURE BUTTON STYLES --
+//  * I want my pure-button elements to look a little different
+//  */
 .pure-button {
     background-color: transparent;
     border: 3px solid white;
@@ -81,43 +86,49 @@ a.pure-button-primary {
 }
 
 
-/*
- * -- MENU STYLES --
- * I want to customize how my .pure-menu looks at the top of the page
- */
+// /*
+//  * -- MENU STYLES --
+//  * I want to customize how my .pure-menu looks at the top of the page
+//  */
 
 .home-menu {
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-    background-color: white;
+    background-color: #333;
 
     .pure-menu-heading {
-        color: black;
+        color: #7f8c8d;
         font-weight: 400;
         font-size: 120%;
     }
 
     .pure-menu-selected a {
-        color: black;
+        color: red;
     }
 
     a {
-        color: black;
+        color: #7f8c8d;
     }
 
     ul {
         list-style: none;
+        margin: 0;
     }
     li {
         display: inline-block;
-        margin-right: 20px;
+        padding: .5em 1em;
+        margin: 0;
     }
     li a:hover,
     li a:focus {
         background: none;
         border: none;
-        color: black
+        color: gray;
+    }
+
+    .red {
+        color: red;
     }
 }
 
@@ -129,10 +140,10 @@ a.pure-button-primary {
 }
 
 
-/*
- * -- SPLASH STYLES --
- * This is the blue top section that appears on the page.
- */
+// /*
+//  * -- SPLASH STYLES --
+//  * This is the blue top section that appears on the page.
+//  */
 
 .splash-container {
     background-image: url('../library/img/man.jpg');
@@ -150,10 +161,9 @@ a.pure-button-primary {
 }
 
 .splash {
-    /* absolute center .splash within .splash-container */
-    /*width: 80%;*/
+    // /* absolute center .splash within .splash-container */
+    // /*width: 80%;*/
     height: 40%;
-    /*margin: auto;*/
     position: absolute;
     top: 80px; left: 0; bottom: 0; right: 0;
     text-align: center;
@@ -210,7 +220,7 @@ div#mc_embed_signup.top input[type="submit"] {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 70%;
+    top: 100%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -246,13 +256,16 @@ div#mc_embed_signup.top input[type="submit"] {
 
 /* This is the class used for the dark-background areas. */
 .ribbon {
-    background: #2d3e50;
+    background: #333;
     color: #aaa;
+    position: relative;
+    background-image: url('../library/img/TNB-only-B.svg');
+    background-size: 40px;
 }
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
+    background: #333;
     position: relative;
     width: 100%;
 }
@@ -303,6 +316,10 @@ div#mc_embed_signup.top input[type="submit"] {
 
     .content-wrapper {
         top: 80%;
+    }
+
+    .content-home {
+        top: 100%;
     }
     
     .copy {
