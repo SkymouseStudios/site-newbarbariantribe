@@ -1,13 +1,12 @@
 ---
 
-title: Paid Program
+title: Training
 layout: page
 
 ---
 
-“When we are no longer able to change a situation, 
-we are challenged to change ourselves.” 
-Viktor E. Frankl, Man's Search for Meaning
+<h3 class="content-head">“When we are no longer able to change a situation, we are challenged to change ourselves.” </h3>
+#### — Viktor E. Frankl, Man's Search for Meaning
 
 The New Barbarian Training System
 3 months to influence, strength, and true manliness.
@@ -15,7 +14,7 @@ The Catholic man’s guide to becoming useful to your friends and dangerous to y
 
 # Introducing the New Barbarian:
 
-I’m Robert Storey. I’m a former Catholic seminarian, high school teacher, certified Underground Strength Coach, and uncle of 11, and founder of the New Barbarian Tribe (stick with me and I’ll explain the name is good time). I’ve been working in men’s ministry for nearly a decade, and I’ve seen the frustration of good men who just can’t figure out how to be great. 
+I’m Robert Storey. I’m a former Catholic seminarian, high school teacher, certified Underground Strength Coach, and uncle of 11, and founder of the New Barbarian Tribe (stick with me and I’ll explain the name in good time). I’ve been working in men’s ministry for nearly a decade, and I’ve seen the frustration of good men who just can’t figure out how to be great. 
 
 And it is no surprise we are frustrated. We are in a cultural crisis. Men are not acting like men should. It’s time we do something about it and raise ourselves, and those around us to the height of our potential.
 
@@ -127,7 +126,9 @@ How much is this investment worth to you?
 
 I don’t want to put this program out of reach. I want every guy, including college students, to have access to this training, so I’m setting the price at $89. That’s less than $1 a day. 
 
-And in celebration of Easter and the launch of this program, for this week only, I’ll give you the training program, with all the bonuses, for just $45. 50% off the already discounted price. After Divine Mercy Sunday, the price is going back up to $89. Sure, I’ll put it on sale again from time to time, but not this low. But only grab this if you will actually use it. I don’t want your money if this is just going to sit on your computer and gather digital dust. 
+In celebration of the launch of The New Barbarian, and to get this into as many hands as possible, I'm dropping the price by 50%. You can get the whole 3 month training program for $45 for this week only. After that the price is going back up to $89. Don't miss out on this. I'm sure I'll run sales again in the future, but never for this huge of a discount. But only grab this if you will actually use it. I don’t want your money if this is just going to sit on your computer and gather digital dust. 
+
+Don't miss out on this. I'm sure I'll run sales again in the future, but never for this huge of a discount.
 
 $45 for 3 months of training for the body, mind, and soul. 3 months of training to make you a better man with more influence, more strength, and better relationships.
 

@@ -29,47 +29,7 @@
             
             <meta name="description" content="A layout example that shows off a responsive product landing page.">
             <title>The New Barbarian | {{ page.title }}</title>
-            
-            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
-            <script> // Paypal button script
-            paypal.Button.render({
-
-                env: 'sandbox', // Optional: specify 'sandbox' environment
-
-                client: {
-                    sandbox:    'access_token$sandbox$x9wv367f98ggxmfr$da3c46555d8d35136328ea340d90cdbd',
-                    production: 'access_token$production$7s8nd954ktg5psrr$1bb8b21147fc7c0ecd43ff53649052be'
-                },
-
-                payment: function() {
-
-                    var env    = this.props.env;
-                    var client = this.props.client;
-
-                    return paypal.rest.payment.create(env, client, {
-                        transactions: [
-                            {
-                                amount: { total: '67.00', currency: 'USD' }
-                            }
-                        ]
-                    });
-                },
-
-                commit: true, // Optional: show a 'Pay Now' button in the checkout flow
-
-                onAuthorize: function(data, actions) {
-
-                    // Optional: display a confirmation page here
-
-                    return actions.payment.execute().then(function() {
-                        // Show a success page to the buyer
-                    });
-                }
-
-            }, '#paypal-button');
-        </script>
-            
             <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
             
             <!--[if lte IE 8]>
@@ -96,7 +56,7 @@
                 <a class="pure-menu-heading" href="index.html">The New Barbarian</a>
                  <ul>
                      <li><a class="pure-menu" href="about.html">Why Barbarian</a></li>
-                     <li><a class="pure-menu red" href="paid-program.html">Go Pro</a></li>
+                     <li><a class="pure-menu red" href="paid-program.html">Training</a></li>
                  </ul>
             </div>
         </div>

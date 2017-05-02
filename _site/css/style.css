@@ -659,14 +659,15 @@ a.pure-button-primary {
     background: none;
     border: none;
     color: gray; }
-  .home-menu .red {
-    color: red; }
 
 .pure-menu.pure-menu-fixed {
   /* Fixed menus normally have a border at the bottom. */
   border-bottom: none;
   /* I need a higher z-index here because of the scroll-over effect. */
   z-index: 4; }
+
+.red {
+  color: red; }
 
 .splash-container {
   background-image: url("../library/img/man.jpg");
@@ -744,7 +745,7 @@ div#mc_embed_signup.top input[type="submit"] {
 
 /* We want to give the content area some more padding */
 .content {
-  padding: 1em 1em 3em; }
+  padding: 1em; }
 
 /* This is the class used for the main content headers (<h2>) */
 .content-head {
@@ -769,7 +770,7 @@ div#mc_embed_signup.top input[type="submit"] {
   background: #333;
   color: #aaa;
   position: relative;
-  background-image: url("../library/img/TNB-only-B.svg");
+  background-image: url("../library/img/TNB-only-B-light.svg");
   background-size: 40px; }
 
 /* This is the class used for the footer */
@@ -829,3 +830,8 @@ div#mc_embed_signup.top input[type="submit"] {
   /* We increase the header font size even more */
   .splash-head {
     font-size: 190px; } }
+#countdown {
+  margin-top: 0;
+  font-size: 3em;
+  line-height: 2em;
+  border: 5px dashed #aaa; }

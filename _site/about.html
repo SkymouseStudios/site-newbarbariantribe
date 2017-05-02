@@ -29,47 +29,7 @@
             
             <meta name="description" content="A layout example that shows off a responsive product landing page.">
             <title>The New Barbarian | Why Barbarian?</title>
-            
-            <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
-            <script> // Paypal button script
-            paypal.Button.render({
-
-                env: 'sandbox', // Optional: specify 'sandbox' environment
-
-                client: {
-                    sandbox:    'access_token$sandbox$x9wv367f98ggxmfr$da3c46555d8d35136328ea340d90cdbd',
-                    production: 'access_token$production$7s8nd954ktg5psrr$1bb8b21147fc7c0ecd43ff53649052be'
-                },
-
-                payment: function() {
-
-                    var env    = this.props.env;
-                    var client = this.props.client;
-
-                    return paypal.rest.payment.create(env, client, {
-                        transactions: [
-                            {
-                                amount: { total: '67.00', currency: 'USD' }
-                            }
-                        ]
-                    });
-                },
-
-                commit: true, // Optional: show a 'Pay Now' button in the checkout flow
-
-                onAuthorize: function(data, actions) {
-
-                    // Optional: display a confirmation page here
-
-                    return actions.payment.execute().then(function() {
-                        // Show a success page to the buyer
-                    });
-                }
-
-            }, '#paypal-button');
-        </script>
-            
             <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
             
             <!--[if lte IE 8]>
@@ -96,7 +56,7 @@
                 <a class="pure-menu-heading" href="index.html">The New Barbarian</a>
                  <ul>
                      <li><a class="pure-menu" href="about.html">Why Barbarian</a></li>
-                     <li><a class="pure-menu red" href="paid-program.html">Go Pro</a></li>
+                     <li><a class="pure-menu red" href="paid-program.html">Training</a></li>
                  </ul>
             </div>
         </div>
@@ -107,7 +67,7 @@
         <h1 class="splash-head"><strong>Why Barbarian?</strong></h1>
         
         <p class="splash-subhead">
-            Get the full 3-month workout.
+            Get the free barbarian workout.
         </p>
         <p>
 
@@ -132,7 +92,6 @@
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">Change your life for the price of Netflix.</h2>
            <div class="copy">
            <p>I still remember the first time someone called me a barbarian. Well, at least I remember the first time I remember someone calling me a barbarian. It was my girlfriend. I was… well, ok… I don’t really remember it, but I do remember that it happened. I did something a little brutish, and she called me a barbarian.</p>
 
@@ -158,21 +117,36 @@
 
 <p>So get excited. Your journey to refined barbarity starts today. Let’s make waves in the modern world and create a new, vibrant, thoroughly human environment for our children to grow up in. And if you are not aware, this starts in prayer, in relationship with our creator. Pay attention, commit to your own greatness, and follow me on this path. But right now, take 10 minutes and connect with your creator. Thank Him for your existence and ask Him to help you know who you are and who He is.</p>
 
+           <h2 id="launch-sale" class="red">Don't Miss the Launch Sale!</h2>
            </div>
      
     </div>
 
+    
+    <h2 id="countdown" class="is-center"></h1>
+
     <div class="ribbon l-box-lrg pure-g">
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
         <h3 class="content-head content-head-ribbon">Be awesome. Be Barbaric.</h3>
-        <div class="price">$67</div>
-        <div id="paypal-button"></div>
+        <div class="red price"><strike>$67</strike> $45</div>
+        <!-- paypal button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="SJHRUS844SRQE">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+
+
+
+
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
 
             <h2 class="content-head content-head-ribbon">Go Premium. Limited time offer.</h2>
             <p>
-                For simple $12 you can get the exclusive access to a great community of men fighting to be better men, continuously updated workout programs and special gift. Start your journey today, cancel any time. It's like Netflix without the high-quality streaming.
+                 Get the exclusive access to a great community of men fighting to be better men, continuously updated workout programs and special gift. Start your journey today, <a class="red" href="paid-program.html">learn more.</a>
             </p>
         </div>
     </div>
@@ -233,10 +207,10 @@
     </div>
         <!-- Load Scripts last! -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script>window.jQuery || document.write('<script src="library/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="library/js/plugins.js"></script>
+        <script src="library/js/main.js"></script>
+        <script src="library/js/vendor/modernizr-2.8.3.min.js"></script>
 
        <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
